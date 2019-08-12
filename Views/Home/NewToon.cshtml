@@ -1,0 +1,35 @@
+
+@model cartoon 
+
+  
+    <form asp-action="CreateUser" asp-controller="Home" method="post">
+
+        <label asp-for="fname">First Name:</label>
+        <input asp-for="fname">
+        <br>
+        <span class="error" asp-validation-for="fname"></span>
+    <br>
+        <label asp-for="lname">Last Name:</label>
+        <input asp-for="lname">
+        <br>
+        <span class="error" asp-validation-for="lname"></span>
+    <br>
+        <label asp-for="age"></label>
+        <input asp-for="age">
+        <br>
+        <span class="error" asp-validation-for="age"></span>
+    <br>
+        <label asp-for="email"></label>
+        <input asp-for="email">
+        <br>
+        <span class="error" asp-validation-for="email"></span>
+    <br>
+        <label asp-for="password"></label>
+        <input asp-for="password">
+        <br>
+        <span class="error" asp-validation-for="password"></span>
+    <br>
+        <input value="Add User" type="submit">    
+
+    </form>
+
